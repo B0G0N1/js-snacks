@@ -64,12 +64,13 @@ console.log(transformedStr); // Output previsto: "hEllO wOrld"
 // JS-SNACK-5
 console.log("5) Data una stringa, verificare se questa contiene solo caratteri unici (nessun carattere si ripete). Utilizza una variabile booleana per memorizzare il risultato.");
 
-let str = "abcdefg";
+// Cambiato "Str" con "StrUnique"
+let strUnique = "abcdefg";
 let hasUniqueChars = true;
 
-for (let i = 0; i < str.length - 1; i++) {
-    for (let j = i + 1; j < str.length; j++) {
-        if (str[i] === str[j]) {
+for (let i = 0; i < strUnique.length - 1; i++) {
+    for (let j = i + 1; j < strUnique.length; j++) {
+        if (strUnique[i] === strUnique[j]) {
             hasUniqueChars = false;
         }
     }
