@@ -27,3 +27,16 @@ for (let i = 0; i < str.length; i++) {
 }
 
 console.log(counter);
+
+
+// JS-SNACK-3
+console.log("Dato un numero n, creare un array con i primi n termini della sequenza di Fibonacci. Le prime due cifre della sequenza sono 0 e 1, e ogni numero successivo è la somma dei due precedenti");
+
+let n = 5; // Puoi cambiare questo valore per ottenere più o meno termini della sequenza
+let fibonacciSeq = [0, 1];
+
+while (fibonacciSeq.length < n) {
+    fibonacciSeq.push(fibonacciSeq[fibonacciSeq.length - 1] + fibonacciSeq[fibonacciSeq.length - 2]);
+}
+
+console.log(fibonacciSeq);
